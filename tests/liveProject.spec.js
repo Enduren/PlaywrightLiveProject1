@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('webappsecurity login', async ({ page }) => {
+test('web app security login', async ({ page }) => {
   await page.goto('http://zero.webappsecurity.com/login.html');
   
 });
