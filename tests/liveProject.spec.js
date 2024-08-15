@@ -2,6 +2,17 @@ import { test, expect } from '@playwright/test';
 
 test('web app security login', async ({ page }) => {
   await page.goto('http://zero.webappsecurity.com/login.html');
+
+  //type username
+  await page.getByLabel('Login').fill('dtennison')
+
+  //type password
+  await page.getByLabel('Password').fill('password123')
+
+  //click the checkbox
+  await page.getByLabel('Keep me signed in').click()
+
+
   
 });
 
