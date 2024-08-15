@@ -27,6 +27,9 @@ test('Automation project', async ({ page }) => {
     await page.getByRole('link', { name: ' Toggle' }).click()
 
     //click button on the menu
-    await page.getByRole('link', { name: 'Buttons' }).click()
+    await page.getByRole('link', { name: 'DropDown Checkbox Radio' }).click()
+
+    //click on link
+    await page.getByRole('link', { name: 'Cucumber BDD with Selenium &' }).click()
     
 })
