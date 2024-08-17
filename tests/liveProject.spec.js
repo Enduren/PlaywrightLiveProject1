@@ -33,3 +33,15 @@ test('Automation project', async ({ page }) => {
     await page.getByRole('link', { name: 'Cucumber BDD with Selenium &' }).click()
     
 })
+
+test('Login', async ({ page }) => {
+
+  await page.goto("https://www.automationtesting.co.uk/loginPortal.html")
+
+  await page.getByPlaceholder('Username').fill('Dexx')
+
+  await page.getByPlaceholder('Password').fill('Password')
+
+  await page.getByRole('button', { name: 'Login' }).click()
+  
+})
